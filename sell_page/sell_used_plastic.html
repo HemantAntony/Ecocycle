@@ -17,7 +17,7 @@
         </ul>
     </div>
 
-    <div class="content">
+    <!-- <div class="content">
         <h3>Enter your name</h3>
         <textarea name="nameText" id="nameTextArea" cols="20" rows="1"></textarea>
         <h3>Enter your address</h3>
@@ -27,6 +27,23 @@
         <h3>Enter approximate weight of plastic</h3>
         <textarea name="weightText" id="weightTextArea" cols="5" rows="1"></textarea>
         <button id="submitButton">Submit</button>
-    </div>
+    </div> -->
+
+    <form>
+        <fieldset>
+            <legend>Enter your name</legend>
+            <input type="text" class="form-control" name="name" id="sellerName">
+            <legend>Enter your address</legend>
+            <input type="text" class="form-control" name="address" id="sellerAddress">
+            <legend>Enter your phone number</legend>
+            <input type="number" class="form-control" name="phone" id="sellerPhoneNumber">
+            <legend>Enter approximate weight of plastic waste (in Kg)</legend>
+            <input type="number" class="form-control" name="weight" id="sellerWasteWeight">
+            
+            <button type="button" id="submitForm">Submit</button>
+        </fieldset>
+    </form>
+
+    <script src="sell_used_plastic.js"></script>
 </body>
 </html>
