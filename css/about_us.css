@@ -2,13 +2,13 @@ h3 {
     color: var(--primary);
     font-size: 27px;
     margin: 0px 0px 20px 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
  
 }
 
 h4 {
     margin: 0px 0px 10px 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     color: rgb(2, 53, 8);
 
