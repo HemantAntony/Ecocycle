@@ -1,16 +1,31 @@
 h3 {
     color: var(--primary);
-    font-size: 27px;
-    margin: 0px 0px 20px 10px;
+    font-size: 40px;
+    margin: 60px 0px 20px 25px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
- 
+    letter-spacing: 2.5px;
+    text-shadow: 1px 1px 2px rgb(58, 93, 65);
+    text-shadow: 3px 2px #84af77;
 }
 
 h4 {
-    margin: 0px 0px 10px 10px;
+    margin: 10px 0px 10px 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgb(39, 52, 45);
+    letter-spacing: 2px;
+
+}
+
+h5{
+    margin: 25px 30px 20px 30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    color: rgb(2, 58, 10);
+    font-size: 25px;
+    color: rgb(4, 85, 16);
+    padding-top: 30px;
+    text-align:justify;
+    letter-spacing:2px;
+    text-shadow: 1px 1px 2px rgb(8, 101, 26);
 
 }
 
@@ -20,8 +35,8 @@ h4 {
     border: none;
     text-align: center;
     width: 50%;
-    margin: 40px auto;
-    padding: 15px 32px;
+    margin: 80px auto;
+    padding: 50px 50px;
     display: flex;
     align-items: center;
     justify-content: center;
