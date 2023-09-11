@@ -1,0 +1,41 @@
+.itemsContainer {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 600px);
+    grid-template-columns: repeat(auto-fit, 500px);
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.itemsContainer div {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemsContainer div img {
+    width: 100%;
+}
+
+.itemsContainer div div {
+    display: flex;
+    justify-content: end;
+}
+
+.itemsContainer div div h4 {
+    text-align: center;
+    background-color: rgb(179, 179, 179);
+    font-size: 35px;
+}
+
+.itemsContainer div div button {
+    height: 70px;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--primary);
+}
