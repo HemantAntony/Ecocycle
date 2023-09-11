@@ -1,73 +1,61 @@
-:root {
-    --primary: #026928;
-    --light: #ffffff;
-    --dark: #231F20;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-}
-
 body {
-    background-color: var(--light);
+    background-color: #f0f0f0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.navbar {
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+form {
+    max-width: 800px;
+    margin: 0 5% auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 0 solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-    color: var(--primary);
-    font-size: 40px;
+
+fieldset {
+    border: 0 solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
-.navbar ul {
-    list-style: none;
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-top: 20px;
+    color: rgb(3, 78, 3);
 }
 
-.navbar ul li {
-    display: inline-block;
-    margin: 0 20px;
+input {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #014318;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
 }
 
-.navbar ul li a{
-    text-decoration: none;
-    color: var(--primary);
-    text-transform: uppercase;
+#submitForm {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitForm {
+    margin-top: 30px;
+}
+
+button {
+    background-color: #0056b3;
     font-size: 22px;
-}
-/* 
-.content h3 {
-    color: var(--primary);
-    margin: 15px auto;
-    font-size: 22px;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    margin-left:280px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 29px -10px;
 
-.content textarea {
-    font-size: 22px;
-    width: 90%;
-    margin: 15px auto;
-    display: flex;
 }
-
-.content button {
-    font-size: 22px;
-    width: 90%;
-    height: 30px;
-    margin: 15px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary);
-} */
