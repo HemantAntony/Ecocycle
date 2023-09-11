@@ -27,3 +27,44 @@
     text-transform: uppercase;
     font-size: 25px;
 }
+
+.loginContainer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContainer img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.accountPopup {
+    background-color: rgb(230, 230, 230);
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.accountPopupClosed {
+    display: none;
+}
+
+.accountPopup div {
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.accountPopup div h4 {
+    margin: auto;
+    font-size: 18px;
+    color: var(--primary);
+}
+
+#logoutContainer {
+    display: none;
+}

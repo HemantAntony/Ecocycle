@@ -39,9 +39,9 @@ document.getElementById("submitForm").onclick = function() {
 
     db.transaction(function(transaction) {
         var sql="INSERT INTO " + TABLE_NAME + " (name,address,phoneNumber,wasteWeight) VALUES(?,?,?,?)";
-        transaction.executeSql(sql,[name,address,phoneNumber,weight],function(){
+        transaction.executeSql(sql,[name,address,phoneNumber,weight], function(){
             console.log("New item is added successfully");
-        },function(transaction,err){
+        }, function(transaction,err){
             console.error(err.message);
         })
     });
