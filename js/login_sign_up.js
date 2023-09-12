@@ -14,6 +14,10 @@ var signUpButton = document.getElementById("signUpButton");
 signUpButton.onclick = () => {
     var signUpUsername = document.getElementById("signUpUsername");
     var signUpPassword = document.getElementById("signUpPassword");
+    var signUpEmail = document.getElementById("signUpEmail");
+    var signUpPhoneNumber = document.getElementById("signUpPhoneNumber");
+    var signUpAddress = document.getElementById("signUpAddress");
 
-    signUpUser(signUpUsername.value, signUpPassword.value);
+    signUpUser(signUpUsername.value, signUpPassword.value, signUpEmail.value,
+        signUpPhoneNumber.value, signUpAddress.value);
 };
