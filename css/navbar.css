@@ -8,12 +8,13 @@
 }
 
 .logo {
-    color: rgb(7, 120, 37);
+    color: rgb(4, 81, 24);
     font-size: 78px;
     margin-right: 90px;
     margin-left: 70px;
     margin-top: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: rgb(150, 195, 152) 1px 4px
 }
 
 .navbar ul {
@@ -29,9 +30,11 @@
 
 .navbar ul li a{
     text-decoration: none;
-    color: rgb(3, 100, 11);
+    color: rgb(1, 80, 8);
     text-transform: uppercase;
     font-size: 25px;
+    text-shadow: 1px 1px 2px rgb(16, 120, 41);
+
 }
 
 .loginContainer {
