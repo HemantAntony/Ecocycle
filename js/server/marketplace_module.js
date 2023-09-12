@@ -1,34 +1,45 @@
 var items = [
     {
-        "name" : "Item1",
-        "cost" : 500,
-        "image" : "placeholder.png"
+        "name" : "Bird nest",
+        "cost" : 700,
+        "image" : "birdnest.jpeg"
     },
     {
-        "name" : "Item2",
+        "name" : "Comb",
         "cost" : 100,
-        "image" : "placeholder.png"
+        "image" : "comb.jpeg"
     },
     {
-        "name" : "Item3",
-        "cost" : 1000,
-        "image" : "placeholder.png"
-    },
-    {
-        "name" : "Item4",
+        "name" : "Cooking utensils",
         "cost" : 300,
-        "image" : "placeholder.png"
+        "image" : "cookingTools.jpeg"
     },
     {
-        "name" : "Item5",
-        "cost" : 750,
-        "image" : "placeholder.png"
+        "name" : "Cutting board",
+        "cost" : 300,
+        "image" : "cuttingBoard.jpeg"
     },
     {
-        "name" : "Item6",
-        "cost" : 225,
-        "image" : "placeholder.png"
-    }
+        "name" : "Ladies handbag",
+        "cost" : 1000,
+        "image" : "ladiesHandbag.jpeg"
+    },
+    {
+        "name" : "Stool",
+        "cost" : 1200,
+        "image" : "stool.jpeg"
+    },
+    {
+        "name" : "Storage bag",
+        "cost" : 400,
+        "image" : "storageBag.jpeg"
+    },
+    {
+        "name" : "Waterbottle",
+        "cost" : 200,
+        "image" : "waterbottle.jpeg"
+    },
+
 ];
 
 
