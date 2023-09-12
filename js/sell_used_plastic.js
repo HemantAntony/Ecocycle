@@ -1,6 +1,10 @@
 import { getCurrentUserAddress } from "./server/account_module.js";
 import { addPlasticSeller } from "./server/sell_plastic_module.js"
 
+if (localStorage.getItem('currentUsername').length == 0) {
+    window.open("login_sign_up.html", "_self");
+}
+
 getCurrentUserAddress((address) => {
     document.getElementById("sellerAddress").value = address;
 });
