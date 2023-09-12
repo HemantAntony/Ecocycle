@@ -25,36 +25,30 @@ db.transaction(function(transaction){
 	})
 });
 
-export function signUpUser(username, password, email, phoneNumber, address) {
-    db.transaction(function(transaction) {
-        var sql="INSERT INTO " + TABLE_NAME + " (username,password, email, phoneNumber, address) VALUES(?,?,?,?,?)";
-        transaction.executeSql(sql,[username, password, email, phoneNumber, address], function(){
+export function signUpUser(username, password, email, phoneNumber, address, callback) {
+    db.transaction(function (transaction) {
+        var sql = "INSERT INTO " + TABLE_NAME + " (username,password, email, phoneNumber, address) VALUES(?,?,?,?,?)";
+        transaction.executeSql(sql, [username, password, email, phoneNumber, address], function () {
             localStorage.setItem('currentUsername', username);
             notifyUserChangedCallbacks();
+            callback();
             console.log("New user has been added successfully");
-        }, function(transaction,err){
+        }, function (transaction, err) {
             console.error(err.message);
         })
     });
 }
 
-export function loginUser(username, password) {
-    db.transaction(function(transaction) {
+export function loginUser(username, password, callback) {
+    db.transaction(function (transaction) {
         var sql = "SELECT password FROM " + TABLE_NAME + " WHERE username = \"" + username + "\";";
-        transaction.executeSql(sql, undefined, function(transaction, result) {
-            if (result.rows.length != 1) {
-                console.error("Unacceptable number of passwords for same user");
-                return false;
-            }
-
+        transaction.executeSql(sql, undefined, function (transaction, result) {
             if (result.rows[0].password === password) {
                 localStorage.setItem('currentUsername', username);
                 notifyUserChangedCallbacks();
-                return true;
+                callback();
             }
-
-            return false;
-        }, function(transaction, err) {
+        }, function (transaction, err) {
             console.error(err.message);
         })
     });
@@ -70,14 +64,14 @@ export function onUserChanged(callback) {
 }
 
 export function getCurrentUserAddress(callback) {
-    db.transaction(function(transaction) {
+    db.transaction(function (transaction) {
         var sql = "SELECT address FROM " + TABLE_NAME + " WHERE username = \""
-        + localStorage.getItem('currentUsername') + "\";";
-        transaction.executeSql(sql, undefined, function(transaction, result) {
+            + localStorage.getItem('currentUsername') + "\";";
+        transaction.executeSql(sql, undefined, function (transaction, result) {
             if (result.rows.length >= 1) {
                 callback(result.rows[0].address);
             }
-        }, function(transaction, err) {
+        }, function (transaction, err) {
             console.error(err.message);
         })
     });

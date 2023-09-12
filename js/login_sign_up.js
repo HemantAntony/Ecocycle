@@ -6,7 +6,9 @@ loginButton.onclick = () => {
     var loginUsername = document.getElementById("loginUsername");
     var loginPassword = document.getElementById("loginPassword");
 
-    var result = loginUser(loginUsername.value, loginPassword.value);
+    loginUser(loginUsername.value, loginPassword.value, () => {
+        window.open('index.html', '_self');
+    });
 };
 
 var signUpButton = document.getElementById("signUpButton");
@@ -19,5 +21,7 @@ signUpButton.onclick = () => {
     var signUpAddress = document.getElementById("signUpAddress");
 
     signUpUser(signUpUsername.value, signUpPassword.value, signUpEmail.value,
-        signUpPhoneNumber.value, signUpAddress.value);
+        signUpPhoneNumber.value, signUpAddress.value, () => {
+            window.open('index.html', '_self');
+    });
 };
