@@ -1,0 +1,82 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.hero {
+    background-image: url('background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 60px ;
+    color: #04561d;
+    margin-left: 50px;
+    font-size:20px;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 1px 1px #84af77;
+}
+
+.text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow:1px 2px #84af77;
+
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #0b4b19;
+    color: #fff;
+    margin-top: 40px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.features {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:#04561d;
+    text-shadow: 1px 1px #84af77
+}
+
+.feature {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow:1px 2px #84af77;
+    color: #04561d;
